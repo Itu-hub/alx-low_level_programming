@@ -4,15 +4,21 @@
  *
  * return: void
  */
-
 void print_most_numbers(void)
 {
-	int c;
+	int x = 0;
 
-	for (c = 0; c <= 9; c++)
+	for (; x <= 9; x++)
 	{
-		if ((c == 2 || c == 4))
-			_putchar(c);
+		if (x == 2 || x == 4)
+		{
+			continue;
+		}
+		else
+		{
+			_putchar(x + '0');
+		}
 	}
+
 	_putchar('\n');
 }
